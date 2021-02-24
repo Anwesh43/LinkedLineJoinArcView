@@ -47,6 +47,7 @@ fun Canvas.drawLineJoinArc(w : Float, h : Float, scale : Float, paint : Paint) {
     translate(0f, h / 2 * (1 - sf2))
     drawLine(0f, 0f, size, 0f, paint)
     restore()
+    drawArc(RectF(-size / 5, -size / 5, size / 5, size / 5), -rot, rot * sf3, true, paint)
     restore()
 }
 
